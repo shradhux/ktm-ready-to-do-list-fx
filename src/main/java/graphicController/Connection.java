@@ -41,20 +41,17 @@ public class Connection {
             else {
                 Main.change("Accueil", new Accueil(user), "vous etes connecté, bravooooo!!!!!");
             }
-
-
-
-
-
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     @FXML
+    void inscription(ActionEvent event) { Main.change("Inscription", new Inscription(), "Inscrit toi ;) "); }
+
+    @FXML
     void oubli(ActionEvent event) {
-        Main.change("Oubli", new Oubli(), "ah, C balo | :-( | !!!");
+        Main.change("Oubli", new Oubli(), "ah, C balo  :(  !!!");
     }
 
 }

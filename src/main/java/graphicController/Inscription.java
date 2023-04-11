@@ -1,4 +1,4 @@
-package application;
+package graphicController;
 
 import controller.utilisateurController.UtilisateurController;
 import javafx.event.ActionEvent;
@@ -17,14 +17,15 @@ public class Inscription {
 
     @FXML
     private TextField prenom;
+    @FXML
     private TextField mdp;
 
     @FXML
     private Button valider;
 
     @FXML
-    void valid(ActionEvent event) {
-        Utilisateur user = new UtilisateurController().inscription(nom.getText(),prenom.getText(),mail.getText(),mdp.getText());
+    void valider(ActionEvent event) {
+        UtilisateurController.inscription(new Utilisateur(nom.getText(),prenom.getText(),mail.getText(),mdp.getText()));
 
     }
 

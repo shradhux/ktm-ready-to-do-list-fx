@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="graphicController.Connection">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphicController.Connection">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -17,5 +17,6 @@
    <Label text="mdp" />
    <TextField fx:id="mdp" />
    <Button fx:id="connectbutton" mnemonicParsing="false" onAction="#connection" text="se connecter" />
+   <Button mnemonicParsing="false" onAction="#inscription" text="S'inscrire" />
    <Button fx:id="oubli" mnemonicParsing="false" onAction="#oubli" text="mdp oublié" visible="false" />
 </VBox>

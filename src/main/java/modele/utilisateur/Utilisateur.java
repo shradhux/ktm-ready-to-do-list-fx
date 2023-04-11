@@ -47,7 +47,9 @@ public class Utilisateur {
         this.mdp = mdp;
         this.admin = admin;
 
-
+    }
+    public Utilisateur(String nom, String prenom, String email, String mdp){
+        this(0,nom,prenom,email,mdp,null);
     }
 }
 
