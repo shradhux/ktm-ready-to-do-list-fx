@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F2F5FC;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="crudfx.controller.AccueilController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F2F5FC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crudfx.controller.AccueilController">
    <children>
       <Pane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #fff;">
          <effect>
@@ -22,12 +22,12 @@
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="myButton2" layoutX="376.0" prefHeight="60.0" prefWidth="109.0" style="-fx-background-color: #0000;" text="Connexion" textFill="#0e3c8f">
+            <Button fx:id="myButton2" layoutX="376.0" prefHeight="60.0" prefWidth="109.0" style="-fx-background-color: #0000;" text="Profile" textFill="#0e3c8f">
                <font>
                   <Font name="Calibri Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="myButton21" layoutX="267.0" prefHeight="60.0" prefWidth="109.0" style="-fx-background-color: #0000;" text="Connexion" textFill="#0e3c8f">
+            <Button fx:id="myButton21" layoutX="267.0" prefHeight="60.0" prefWidth="109.0" style="-fx-background-color: #0000;" text="Admin" textFill="#0e3c8f">
                <font>
                   <Font name="Calibri Bold" size="14.0" />
                </font>
