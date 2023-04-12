@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 import modele.utilisateur.Utilisateur;
 
 public class PasswordReset {
+
     @FXML
     private TextField confirmation;
 
@@ -18,11 +19,22 @@ public class PasswordReset {
 
     private Utilisateur user;
 
+    /**
+     * Récupération des données de l'utilisateur
+     * @param user l'utilisateur en question qui veut changer son mot de passe
+     */
+
     public PasswordReset(Utilisateur user){
         this.user = user;
         System.out.println(this.user.getId());
         System.out.println(this.user.getEmail());
     }
+
+
+    /**
+     * Vérifie l'identité de l'utilisateur
+     * @param event cet évènement vérifie d'abord la longueur du mot de passe puis les caractères
+     */
 
     @FXML
     void valid(ActionEvent event) {
