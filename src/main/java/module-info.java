@@ -5,6 +5,7 @@ module application {
     requires jakarta.mail;
 
 
+    opens modele.utilisateur to javafx.base;
     opens application to javafx.fxml;
     exports application;
     opens graphicController to javafx.fxml;

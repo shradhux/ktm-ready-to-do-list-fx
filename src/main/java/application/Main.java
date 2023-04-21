@@ -1,5 +1,6 @@
 package application;
 
+import graphicController.Connection;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -26,6 +27,7 @@ public class Main extends Application {
     public void start(Stage mystage) throws IOException {
         this.stage = mystage;
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Connection.fxml"));
+        fxmlLoader.setController(new Connection());
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hello!");
         stage.setScene(scene);

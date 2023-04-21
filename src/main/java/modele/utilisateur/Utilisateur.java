@@ -1,34 +1,8 @@
 package modele.utilisateur;
 
 public class Utilisateur {
-
     private int id;
     private String nom;
-
-    public int getId() {
-        return id;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public String getPrenom() {
-        return prenom;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getMdp() {
-        return mdp;
-    }
-
-    public Boolean getAdmin() {
-        return admin;
-    }
-
     private String prenom;
     private String email;
     private String mdp;
@@ -50,6 +24,28 @@ public class Utilisateur {
     }
     public Utilisateur(String nom, String prenom, String email, String mdp){
         this(0,nom,prenom,email,mdp,null);
+    }
+    public Utilisateur(int id, String nom, String prenom, String email, boolean admin){
+        this(id,nom,prenom,email,null,admin);
+    }
+
+    public int getId() {
+        return id;
+    }
+    public String getNom() {
+        return nom;
+    }
+    public String getPrenom() {
+        return prenom;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getMdp() {
+        return mdp;
+    }
+    public Boolean isAdmin() {
+        return admin;
     }
 }
 

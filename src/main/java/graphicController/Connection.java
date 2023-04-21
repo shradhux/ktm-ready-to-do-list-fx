@@ -39,7 +39,7 @@ public class Connection {
                 this.oubli.setVisible(true);
             }
             else {
-                Main.change("Accueil", new Accueil(user), "vous etes connecté, bravooooo!!!!!");
+                Main.change((user.isAdmin())?"AccueilAdmin":"Accueil", (user.isAdmin())?new AccueilAdmin():new Accueil(user), (user.isAdmin())?"Admin":"Utilisateur"+"vous etes connecté, bravooooo!!!!!");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);

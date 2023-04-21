@@ -37,30 +37,21 @@ public class Oubli {
 
     @FXML
     void verrifi_email(ActionEvent event) {
-        try {
-            PreparedStatement req = new Bdd().getBdd().prepareStatement("select count(id_user) from user where mail = ? ;");
-            req.setString(1, input.getText());
-            ResultSet res = req.executeQuery();
-            res.next();
-
-            email_envoie.setVisible(true);
-            this.email = input.getText();
-            input.setText("");
-            title.setText("entrez le code de validation reçu par e-mail !!");
-            verrif.setOnAction(actionEvent -> {
-                try {
-                    verrif();
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
-            });
-            if (res.getInt(1) != 0){
-                this.nb = new Random().nextInt() % 99999999;
-                //xrilmahriuhyrevn
-                Email.send(this.email, "Code de validation CrudFX", "le code de validation est : "+nb);
+        email_envoie.setVisible(true);
+        this.email = input.getText();
+        input.setText("");
+        title.setText("entrez le code de validation reçu par e-mail !!");
+        verrif.setOnAction(actionEvent -> {
+            try {
+                verrif();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        });
+        if (UtilisateurController.countEmail(this.input.getText()) != 0){
+            this.nb = new Random().nextInt() % 99999999;
+            //xrilmahriuhyrevn
+            Email.send(this.email, "Code de validation CrudFX", "le code de validation est : "+nb);
         }
     }
     public void verrif() throws SQLException {

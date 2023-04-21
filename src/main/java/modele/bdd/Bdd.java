@@ -7,12 +7,10 @@ import java.sql.SQLException;
 
 public class Bdd {
 
-    private Connection connection;
 
-    public Connection getBdd(){
+    public static Connection getBdd(){
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cruduser","root", "");
-            return connection;
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/cruduser","root", "");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

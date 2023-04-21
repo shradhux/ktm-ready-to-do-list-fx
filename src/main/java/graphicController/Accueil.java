@@ -1,6 +1,8 @@
 package graphicController;
 
+import application.Main;
 import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import modele.utilisateur.Utilisateur;
 
@@ -15,7 +17,13 @@ public class Accueil {
         this.user = user;
     }
 
-    public void inisilize(){
+    public void initialize(){
         nom.setText(this.user.getPrenom());
     }
+
+    @FXML
+    void deconnect(ActionEvent event) {
+        Main.change("Connection", new Connection(), "Hellooooo !!");
+    }
+
 }
