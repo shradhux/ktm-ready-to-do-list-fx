@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import modele.utilisateur.Utilisateur;
 
-public class Accueil {
+public class  Accueil {
 
     @FXML
     private Label nom;

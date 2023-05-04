@@ -44,7 +44,7 @@ public class UtilisateurController {
     public static void inscription(Utilisateur user) {
         PreparedStatement req = null;
         try {
-            req = new Bdd().getBdd().prepareStatement("INSERT INTO user (nom, prenom, mail, mdp) VALUES (?,?,?,?) ");
+            req = new Bdd().getBdd().prepareStatement("INSERT INTO user (nom, prenom, mail, mdp, est_admin) VALUES (?,?,?,?,0) ");
             req.setString(1, user.getNom());
             req.setString(2, user.getPrenom());
             req.setString(3, user.getMdp());
