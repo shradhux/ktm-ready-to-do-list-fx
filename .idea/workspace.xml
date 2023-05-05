@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1569a2b1-1efd-49dc-8de8-340c981064ea" name="Changes" comment="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list.">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application/AjouterListe.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Inscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modele/bdd/Bdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modele/bdd/Bdd.java" afterDir="false" />
+    </list>
+    <list id="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" name="Changes by ralip" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OBaursKyrgABscrizaczNNUIwS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shrad/IdeaProjects/CrudUser&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1569a2b1-1efd-49dc-8de8-340c981064ea" name="Changes" comment="" />
+      <created>1681036654863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681036654863</updated>
+      <workItem from="1681036656332" duration="751000" />
+      <workItem from="1681037618217" duration="3990000" />
+      <workItem from="1682855097354" duration="970000" />
+      <workItem from="1683207504466" duration="75000" />
+      <workItem from="1683209241120" duration="1200000" />
+      <workItem from="1683212001335" duration="7308000" />
+      <workItem from="1683272402363" duration="9893000" />
+    </task>
+    <task id="LOCAL-00001" summary="initialisation du projet : rassemblement du projet todolist console et crudfx.">
+      <created>1683220223119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683220223119</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update correction du rassemblement du projet todolist console et crudfx / .">
+      <created>1683274102921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683274102921</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list.">
+      <created>1683277238207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683277238207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialisation du projet : rassemblement du projet todolist console et crudfx." />
+    <MESSAGE value="update correction du rassemblement du projet todolist console et crudfx / ." />
+    <MESSAGE value="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list." />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list." />
+  </component>
+</project>

@@ -11,7 +11,7 @@ public class Bdd {
 
     public Connection getBdd(){
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cruduser","root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todolistfx","root", "");
             return connection;
         } catch (SQLException e) {
             throw new RuntimeException(e);

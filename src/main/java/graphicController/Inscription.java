@@ -1,5 +1,6 @@
 package graphicController;
 
+import application.Main;
 import controller.Controller.UtilisateurController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,6 +27,8 @@ public class Inscription {
     @FXML
     void valider(ActionEvent event) {
         UtilisateurController.inscription(new Utilisateur(nom.getText(),prenom.getText(),mail.getText(),mdp.getText()));
+
+        Main.change("Connection.fxml", new Connection(), "Connexion");
 
     }
 
