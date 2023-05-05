@@ -1,17 +1,21 @@
 package graphicController;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
+import modele.bdd.Bdd;
 import modele.utilisateur.Utilisateur;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
 import modele.utilisateur.Utilisateur;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import modele.utilisateur.Utilisateur;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class Accueil {
 
 
@@ -34,22 +38,25 @@ public class Accueil {
     private Button btn_profil;
 
     @FXML
-    private TableColumn<?, ?> colonne1;
+    private TableColumn<Utilisateur, String> colonne1;
 
     @FXML
-    private TableColumn<?, ?> colonne2;
+    private TableColumn<Utilisateur, String> colonne2;
 
     @FXML
-    private TableColumn<?, ?> colonne3;
+    private TableColumn<Utilisateur, String> colonne3;
 
     @FXML
-    private TableColumn<?, ?> colonne4;
+    private TableColumn<Utilisateur, String> colonne4;
 
     @FXML
-    private TableColumn<?, ?> colonne5;
+    private TableColumn<Utilisateur, String> colonne5;
 
     @FXML
-    private TableColumn<?, ?> colonne6;
+    private TableColumn<Utilisateur, String> colonne6;
+
+    @FXML
+    private TableView<?> tableau_principal;
 
     @FXML
     private Button consulter_liste;
@@ -105,7 +112,16 @@ public class Accueil {
     }
 
     @FXML
-    void action_consulter_liste(ActionEvent event) {
+    void action_consulter_liste(ActionEvent event) throws SQLException {
+
+        Bdd bdd = new Bdd();
+        PreparedStatement preparerListe = bdd.getBdd().prepareStatement("SELECT * FROM utilisateur");
+        ResultSet afficherListe = preparerListe.executeQuery();
+
+        while(afficherListe.next());{
+
+        }
+
 
     }
 

@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1569a2b1-1efd-49dc-8de8-340c981064ea" name="Changes" comment="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list.">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application/AjouterListe.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" afterDir="false" />
+    <list default="true" id="5af3317b-a7ae-4539-8778-e32f16913981" name="Changes" comment="Progression Main et affichage des listes sur scenebuilder">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Inscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modele/bdd/Bdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modele/bdd/Bdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application/Accueil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/Accueil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application/ModifTache.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/ModifTache.fxml" afterDir="false" />
     </list>
-    <list id="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" name="Changes by ralip" comment="" />
+    <list id="1b297432-cfa5-4b20-bf23-7a554d10d1f6" name="Changes by shrad" comment="Progression main">
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application/Inscription.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/Inscription.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +30,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="1b297432-cfa5-4b20-bf23-7a554d10d1f6" />
+        <range start1="3" end1="4" start2="4" end2="6" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="7" end1="8" start2="9" end2="9" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="9" end1="10" start2="10" end2="10" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="14" end1="14" start2="14" end2="19" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="36" end1="37" start2="41" end2="42" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="39" end1="40" start2="44" end2="45" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="42" end1="43" start2="47" end2="48" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="45" end1="46" start2="50" end2="51" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="48" end1="49" start2="53" end2="54" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="51" end1="52" start2="56" end2="60" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="107" end1="108" start2="115" end2="125" changelist="5af3317b-a7ae-4539-8778-e32f16913981" />
+        <range start1="113" end1="114" start2="130" end2="130" changelist="1b297432-cfa5-4b20-bf23-7a554d10d1f6" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,7 +67,25 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/shrad/IdeaProjects/CrudUser&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ralip\Desktop\todolistfx\src\main\resources\application" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.Main" />
+      <module name="CrudUser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -62,6 +97,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -133,6 +173,7 @@
     <MESSAGE value="initialisation du projet : rassemblement du projet todolist console et crudfx." />
     <MESSAGE value="update correction du rassemblement du projet todolist console et crudfx / ." />
     <MESSAGE value="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list." />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list." />
+    <MESSAGE value="Progression Main et affichage des listes sur scenebuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progression Main et affichage des listes sur scenebuilder" />
   </component>
 </project>

@@ -43,7 +43,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphicController.Accueil">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -84,7 +84,8 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" >
+
          <children>
             <Button fx:id="btn_profil" layoutX="5.0" layoutY="20.0" mnemonicParsing="false" onAction="#action_profil" text="Profil" />
             <Button fx:id="selectionner_liste" layoutX="5.0" layoutY="61.0" mnemonicParsing="false" onAction="#action_selectionner_liste" text="Selectionner liste" />
@@ -97,7 +98,7 @@
             <Button fx:id="supprimer_liste" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#action_supprimer_liste" text="Supprimer liste" />
             <Button fx:id="ajouter_tache" layoutX="550.0" layoutY="96.0" mnemonicParsing="false" onAction="#action_ajouter_tache" text="Ajouter tâche" />
             <Button fx:id="supprimer_tache" layoutX="542.0" layoutY="131.0" mnemonicParsing="false" onAction="#action_supprimer_tache" text="Supprimer tâche" />
-            <TableView layoutX="106.0" layoutY="44.0" prefHeight="326.0" prefWidth="439.0">
+            <TableView fx:id="tableau_principal" layoutX="106.0" layoutY="44.0" prefHeight="326.0" prefWidth="439.0">
               <columns>
                 <TableColumn fx:id="colonne1" prefWidth="75.0" text="1" />
                 <TableColumn fx:id="colonne2" prefWidth="75.0" text="2" />
@@ -114,6 +115,7 @@
             <Label fx:id="label5" layoutX="405.0" layoutY="4.0" prefHeight="41.0" prefWidth="73.0" />
             <Label fx:id="label6" layoutX="478.0" layoutY="4.0" prefHeight="41.0" prefWidth="73.0" />
          </children>
+
     </AnchorPane>
   </children>
 </VBox>
