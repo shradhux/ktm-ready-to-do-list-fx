@@ -1,4 +1,4 @@
-package controller.utilisateurController;
+package controller.Controller;
 import modele.bdd.Bdd;
 import modele.utilisateur.Utilisateur;
 

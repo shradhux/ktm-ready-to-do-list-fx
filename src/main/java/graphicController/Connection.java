@@ -1,17 +1,14 @@
 package graphicController;
 
 import application.Main;
-import controller.utilisateurController.UtilisateurController;
+import controller.Controller.UtilisateurController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import modele.bdd.Bdd;
 import modele.utilisateur.Utilisateur;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Connection {

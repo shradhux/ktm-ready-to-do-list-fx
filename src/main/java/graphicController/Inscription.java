@@ -1,6 +1,6 @@
 package graphicController;
 
-import controller.utilisateurController.UtilisateurController;
+import controller.Controller.UtilisateurController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
