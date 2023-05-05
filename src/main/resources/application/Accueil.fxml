@@ -1,19 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="120.0" layoutY="113.0" text="bravo vous etes connecte">
-         <font>
-            <Font size="32.0" />
-         </font></Label>
-      <Label fx:id="nom" layoutX="265.0" layoutY="200.0" text="nom">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Label>
-   </children>
-</Pane>
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btn_profil" layoutX="5.0" layoutY="20.0" mnemonicParsing="false" onAction="#action_profil" text="Profil" />
+            <Button fx:id="selectionner_liste" layoutX="5.0" layoutY="61.0" mnemonicParsing="false" onAction="#action_selectionner_liste" text="Selectionner liste" />
+            <Button fx:id="consulter_liste" layoutX="1.0" layoutY="96.0" mnemonicParsing="false" onAction="#action_consulter_liste" text="Consulter listes" />
+            <Button fx:id="modifier_tache" layoutX="547.0" layoutY="20.0" mnemonicParsing="false" onAction="#action_modifier_tache" text="Modifier tâche" />
+            <Button fx:id="valider_tache" layoutX="551.0" layoutY="61.0" mnemonicParsing="false" onAction="#action_valider_tache" text="Valider tache" />
+            <Button fx:id="modifier_type" layoutX="550.0" layoutY="169.0" mnemonicParsing="false" onAction="#action_supprimer_type" text="Modifier type" />
+            <Button fx:id="ajouter_liste" layoutX="5.0" layoutY="203.0" mnemonicParsing="false" onAction="#action_ajouter_liste" text="Ajouter liste" />
+            <Button fx:id="modifier_liste" layoutX="10.0" layoutY="240.0" mnemonicParsing="false" onAction="#action_modifier_liste" text="Modifier liste" />
+            <Button fx:id="supprimer_liste" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#action_supprimer_liste" text="Supprimer liste" />
+            <Button fx:id="ajouter_tache" layoutX="550.0" layoutY="96.0" mnemonicParsing="false" onAction="#action_ajouter_tache" text="Ajouter tâche" />
+            <Button fx:id="supprimer_tache" layoutX="542.0" layoutY="131.0" mnemonicParsing="false" onAction="#action_supprimer_tache" text="Supprimer tâche" />
+            <TableView layoutX="106.0" layoutY="44.0" prefHeight="326.0" prefWidth="439.0">
+              <columns>
+                <TableColumn fx:id="colonne1" prefWidth="75.0" text="1" />
+                <TableColumn fx:id="colonne2" prefWidth="75.0" text="2" />
+                  <TableColumn fx:id="colonne3" prefWidth="75.0" text="3" />
+                  <TableColumn fx:id="colonne4" prefWidth="75.0" text="4" />
+                  <TableColumn fx:id="colonne5" prefWidth="75.0" text="5" />
+                  <TableColumn fx:id="colonne6" prefWidth="75.0" text="6" />
+              </columns>
+            </TableView>
+            <Label fx:id="label1" layoutX="106.0" layoutY="4.0" prefHeight="41.0" prefWidth="73.0" />
+            <Label fx:id="label2" layoutX="179.0" layoutY="4.0" prefHeight="41.0" prefWidth="80.0" />
+            <Label fx:id="label3" layoutX="259.0" layoutY="4.0" prefHeight="41.0" prefWidth="73.0" />
+            <Label fx:id="label4" layoutX="332.0" layoutY="4.0" prefHeight="41.0" prefWidth="73.0" />
+            <Label fx:id="label5" layoutX="405.0" layoutY="4.0" prefHeight="41.0" prefWidth="73.0" />
+            <Label fx:id="label6" layoutX="478.0" layoutY="4.0" prefHeight="41.0" prefWidth="73.0" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
