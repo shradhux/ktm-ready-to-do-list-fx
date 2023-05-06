@@ -10,7 +10,12 @@ import javafx.scene.control.Label;
 import modele.utilisateur.Utilisateur;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import modele.bdd.Bdd;
 import modele.utilisateur.Utilisateur;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -102,12 +107,14 @@ public class Accueil {
 
     @FXML
     void action_ajouter_liste(ActionEvent event) {
+        Main.change("AjouterListe");
 
 
     }
 
     @FXML
     void action_ajouter_tache(ActionEvent event) {
+        Main.change("AjouterTache");
 
     }
 
@@ -127,11 +134,12 @@ public class Accueil {
 
     @FXML
     void action_modifier_liste(ActionEvent event) {
-
+        Main.change("ModificationListe");
     }
 
     @FXML
     void action_modifier_tache(ActionEvent event) {
+        Main.change("ModifTache");
 
     }
 
@@ -151,11 +159,13 @@ public class Accueil {
 
     @FXML
     void action_supprimer_liste(ActionEvent event) {
+        Main.change("SupprimerListe");
 
     }
 
     @FXML
     void action_supprimer_tache(ActionEvent event) {
+        Main.change("SupprimerTache");
 
     }
 

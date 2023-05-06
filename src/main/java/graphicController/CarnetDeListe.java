@@ -32,7 +32,7 @@ public class CarnetDeListe {
         lesListes.get(index).setDescription(descrition);
     }
 
-    public void supprimerListe(int i){
+    public void supprimerListe(String i){
         lesListes.remove(i);
     }
 

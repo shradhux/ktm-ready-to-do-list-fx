@@ -25,11 +25,13 @@ public class Inscription {
     private Button valider;
 
     @FXML
-    void valider(ActionEvent event) {
+    void valider(ActionEvent event) {Main.change("Connection");
         UtilisateurController.inscription(new Utilisateur(nom.getText(),prenom.getText(),mail.getText(),mdp.getText()));
 
-        Main.change("Connection.fxml", new Connection(), "Connexion");
+
 
     }
+
+
 
 }

@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-public class AjouterListe {
+public class AjouterTache {
 
     @FXML
     private TextField description;
@@ -14,6 +14,11 @@ public class AjouterListe {
 
     @FXML
     void Ajouter(ActionEvent event) {
+
+    }
+
+    @FXML
+    void est_realise(ActionEvent event) {
 
     }
 

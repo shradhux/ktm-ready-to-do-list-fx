@@ -4,16 +4,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-public class AjouterListe {
-
-    @FXML
-    private TextField description;
+public class SupprimerListe {
 
     @FXML
     private TextField nom;
 
     @FXML
-    void Ajouter(ActionEvent event) {
+    void supprimer(ActionEvent event) {
+
+        CarnetDeListe carnetDeListe = new CarnetDeListe();
+        carnetDeListe.supprimerListe(nom.getText());
 
     }
 
