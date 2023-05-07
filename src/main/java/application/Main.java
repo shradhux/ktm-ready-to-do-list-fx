@@ -1,11 +1,9 @@
 package application;
 
-import graphicController.CarnetDeListe;
-import graphicController.CarnetDeType;
-import graphicController.Connection;
-import graphicController.Liste;
+import graphicController.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import modele.bdd.Bdd;
@@ -20,6 +18,9 @@ import java.util.Scanner;
 public class Main extends Application {
 
     public static Stage stage;
+
+    private static FXMLLoader fxmlLoader;
+
 
     @Override
     public void start(Stage mystage) throws IOException {

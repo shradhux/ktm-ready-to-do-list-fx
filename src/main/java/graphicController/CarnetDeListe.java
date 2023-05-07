@@ -37,7 +37,7 @@ public class CarnetDeListe {
     }
 
     public void ajouterListe(Liste uneListe) {
-        this.lesListes.add(uneListe);
+        lesListes.add(uneListe);
     }
     public void ajouterTache(int i,Tache tache) {
         this.lesListes.get(i).ajouterTache(tache);
