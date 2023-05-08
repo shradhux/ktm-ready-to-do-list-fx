@@ -1,5 +1,7 @@
-package graphicController;
+package Classes;
 
+
+import Classes.Tache;
 
 import java.util.ArrayList;
 public class Liste {
@@ -8,11 +10,19 @@ public class Liste {
     private String nom;
     private String description;
 
+    private int id_liste;
+
 
 
     public Liste (String nom, String description){
         this.nom = nom;
         this.description = description;
+    }
+
+    public Liste(int id_liste ,String nom ,String description){
+        this.id_liste=id_liste;
+        this.nom=nom;
+        this.description=description;
     }
 
     public String getNom() {

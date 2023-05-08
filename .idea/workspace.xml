@@ -5,25 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1569a2b1-1efd-49dc-8de8-340c981064ea" name="Changes" comment="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/ModifType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application/ModifInscrit.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application/ModifType.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application/Accueil_1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application/AjoutTache.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/CarnetDeListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/CarnetDeListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/CarnetDeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/CarnetDeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Inscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Liste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/PasswordReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/PasswordReset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Tache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Tache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modele/utilisateur/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    </list>
+    <list id="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" name="Changes by ralip" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/ListeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/TacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/ModifInscrit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/AjouterTache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterTache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/CarnetDeListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/CarnetDeListe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/SupprimerListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/SupprimerListe.java" afterDir="false" />
-    </list>
-    <list id="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" name="Changes by ralip" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/ModifInscrit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/CarnetDeListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/CarnetDeListe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modele/bdd/Bdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modele/bdd/Bdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modele/utilisateur/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modele/utilisateur/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modele/utilisateur/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Utilisateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application/Accueil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/Accueil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application/AjouterTache.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,59 +54,30 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/graphicController/CarnetDeListe.java">
+    <file path="$PROJECT_DIR$/src/main/java/Classes/Utilisateur.java">
       <ranges>
-        <range start1="7" end1="8" start2="7" end2="8" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="11" end1="11" start2="11" end2="17" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="39" end1="40" start2="45" end2="46" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="0" end1="1" start2="0" end2="1" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="4" end1="5" start2="4" end2="5" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="7" end1="8" start2="7" end2="8" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="26" end1="26" start2="26" end2="28" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/main/java/application/Main.java">
+    <file path="$PROJECT_DIR$/src/main/java/controller/Controller/UtilisateurController.java">
       <ranges>
-        <range start1="2" end1="6" start2="2" end2="3" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="8" end1="8" start2="5" end2="6" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="23" end1="23" start2="21" end2="24" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="24" end1="25" start2="25" end2="35" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="66" end1="68" start2="76" end2="78" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="69" end1="69" start2="79" end2="121" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="73" end1="75" start2="125" end2="126" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
+        <range start1="1" end1="1" start2="1" end2="2" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="2" end1="3" start2="3" end2="4" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="58" end1="58" start2="59" end2="76" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/main/java/graphicController/Accueil.java">
       <ranges>
-        <range start1="2" end1="6" start2="2" end2="3" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="8" end1="11" start2="5" end2="6" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="19" end1="22" start2="14" end2="14" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="25" end1="27" start2="17" end2="17" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="29" end1="30" start2="19" end2="26" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="31" end1="31" start2="27" end2="76" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="35" end1="37" start2="80" end2="246" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="38" end1="40" start2="247" end2="249" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="41" end1="43" start2="250" end2="252" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="44" end1="46" start2="253" end2="255" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="47" end1="49" start2="256" end2="258" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="50" end1="52" start2="259" end2="261" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="53" end1="55" start2="262" end2="264" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="56" end1="58" start2="265" end2="267" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="59" end1="61" start2="268" end2="270" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="62" end1="64" start2="271" end2="273" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="65" end1="67" start2="274" end2="465" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="68" end1="70" start2="466" end2="510" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="71" end1="73" start2="511" end2="513" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="74" end1="76" start2="514" end2="516" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="77" end1="79" start2="517" end2="519" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="80" end1="82" start2="520" end2="522" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="83" end1="85" start2="523" end2="525" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="86" end1="88" start2="526" end2="528" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="89" end1="91" start2="529" end2="531" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="92" end1="94" start2="532" end2="534" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="95" end1="97" start2="535" end2="537" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="98" end1="100" start2="538" end2="540" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="101" end1="103" start2="541" end2="543" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="104" end1="106" start2="544" end2="546" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="147" end1="148" start2="587" end2="588" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
-        <range start1="151" end1="152" start2="591" end2="592" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
-        <range start1="157" end1="157" start2="597" end2="608" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="2" end1="2" start2="2" end2="3" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="8" end1="9" start2="9" end2="10" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="17" end1="19" start2="18" end2="18" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="21" end1="22" start2="20" end2="27" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="23" end1="23" start2="28" end2="77" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="534" end1="534" start2="588" end2="589" changelist="1569a2b1-1efd-49dc-8de8-340c981064ea" />
+        <range start1="546" end1="554" start2="601" end2="601" changelist="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" />
       </ranges>
     </file>
   </component>
@@ -171,6 +153,7 @@
       <workItem from="1683212001335" duration="7308000" />
       <workItem from="1683272402363" duration="9893000" />
       <workItem from="1683447981861" duration="9165000" />
+      <workItem from="1683536870942" duration="15230000" />
     </task>
     <task id="LOCAL-00001" summary="initialisation du projet : rassemblement du projet todolist console et crudfx.">
       <created>1683220223119</created>

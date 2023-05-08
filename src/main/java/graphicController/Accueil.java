@@ -1,12 +1,13 @@
 package graphicController;
 
+import Classes.*;
 import application.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import modele.bdd.Bdd;
-import modele.utilisateur.Utilisateur;
+import Classes.Utilisateur;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,12 +16,65 @@ import java.sql.SQLException;
 
 public class Accueil {
 
-
-
         private final Utilisateur user;
 
-        public  Accueil(Utilisateur user){
+        private static CarnetDeListe carnet;
+
+        private static CarnetDeType touslestypes;
+
+
+
+        public  Accueil(Utilisateur user) throws SQLException{
             this.user = user;
+
+                CarnetDeListe carnet = new CarnetDeListe();
+                CarnetDeType touslestypes = new CarnetDeType();
+
+                Liste uneListe = new Liste("A","B");
+                carnet.ajouterListe(uneListe);
+
+
+
+
+
+
+                PreparedStatement extraireListes = new Bdd().getBdd().prepareStatement("SELECT * FROM liste");
+                ResultSet recupListes = extraireListes.executeQuery();
+                int positionliste = 0;
+                while (recupListes.next()){     // On extrait la liste, on la place dans le carnet, et on attribue les taches avec leur types respectifs UNIQUEMENT si elle correspond à un utilisateur
+
+
+                        PreparedStatement ListeUser = new Bdd().getBdd().prepareStatement("SELECT * FROM UtilisateurListe WHERE ref_utilisateur = ? AND ref_liste = ?");
+                        ListeUser.setInt(1, Utilisateur.getId());
+                        ListeUser.setInt(2,recupListes.getInt(1));
+                        ResultSet RecupListeUser = ListeUser.executeQuery();
+                        if (RecupListeUser.next()) {
+
+
+                                Liste liste = new Liste(recupListes.getString(2), recupListes.getString(3));
+
+                                carnet.ajouterListe(liste);
+                                PreparedStatement extraireTaches = new Bdd().getBdd().prepareStatement("SELECT * FROM tache");
+                                ResultSet recupTaches = extraireTaches.executeQuery();
+
+                                while (recupTaches.next()) {
+
+                                        if (recupTaches.getInt(6) == recupListes.getInt(1)) {
+                                                Tache tache = new Tache(recupTaches.getString(3), recupTaches.getString(2), recupTaches.getBoolean(4), recupTaches.getInt(6), recupTaches.getInt(5));
+                                                carnet.ajouterTache(positionliste, tache);
+                                        }
+                                }
+                                positionliste++;
+
+                        }
+                }
+
+                PreparedStatement extraireType = new Bdd().getBdd().prepareStatement("SELECT * FROM type");
+                ResultSet recupTypes = extraireType.executeQuery();
+                while (recupTypes.next()){
+                        Type unType = new Type(recupTypes.getString(2),recupTypes.getString(3));
+                        touslestypes.ajouterType(unType);
+                }
         }
 
 
@@ -532,6 +586,7 @@ public class Accueil {
 
     @FXML
     void action_profil(ActionEvent event) {
+        Main.change("ModifInscrit");
 
     }
 

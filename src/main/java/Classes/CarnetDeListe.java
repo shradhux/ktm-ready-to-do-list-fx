@@ -1,14 +1,20 @@
-package graphicController;
+package Classes;
 
 
 import java.util.ArrayList;
 
 public class CarnetDeListe {
 
-    private ArrayList<Liste> lesListes;
+    private static ArrayList<Liste> lesListes;
 
     public CarnetDeListe(){
         this.lesListes = new ArrayList<Liste>();
+
+
+
+
+
+
     }
 
     public void appelValidationTache(int i, int y, boolean b){
@@ -39,7 +45,7 @@ public class CarnetDeListe {
     public void ajouterListe(Liste uneListe) {
         lesListes.add(uneListe);
     }
-    public void ajouterTache(int i,Tache tache) {
+    public void ajouterTache(int i, Tache tache) {
         this.lesListes.get(i).ajouterTache(tache);
     }
 

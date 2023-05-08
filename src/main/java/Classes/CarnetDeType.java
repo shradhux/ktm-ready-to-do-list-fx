@@ -1,4 +1,6 @@
-package graphicController;
+package Classes;
+
+import Classes.Type;
 
 import java.util.ArrayList;
 

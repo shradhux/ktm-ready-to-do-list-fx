@@ -1,11 +1,11 @@
-package modele.utilisateur;
+package Classes;
 
 public class Utilisateur {
 
-    private int id;
+    private static int id;
     private String nom;
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
 

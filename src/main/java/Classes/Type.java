@@ -1,4 +1,4 @@
-package graphicController;
+package Classes;
 
 public class Type {
 

@@ -1,4 +1,4 @@
-package graphicController;
+package Classes;
 
 import java.util.ArrayList;
 

@@ -9,4 +9,6 @@ module application {
     exports application;
     opens graphicController to javafx.fxml;
     exports graphicController;
+    exports Classes;
+    opens Classes to javafx.fxml;
 }

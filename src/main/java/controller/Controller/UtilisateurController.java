@@ -1,6 +1,7 @@
 package controller.Controller;
+import javafx.scene.control.TextField;
 import modele.bdd.Bdd;
-import modele.utilisateur.Utilisateur;
+import Classes.Utilisateur;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

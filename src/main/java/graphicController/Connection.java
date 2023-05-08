@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import modele.utilisateur.Utilisateur;
+import Classes.Utilisateur;
 
 import java.sql.SQLException;
 
@@ -36,11 +36,12 @@ public class Connection {
                 this.oubli.setVisible(true);
             }
             else {
-                Main.change("Accueil", new Accueil(user), "vous etes connecté, bravooooo!!!!!");
+                Main.change("Accueil_1", new Accueil_1(user), "vous etes connecté, bravooooo!!!!!");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     @FXML
