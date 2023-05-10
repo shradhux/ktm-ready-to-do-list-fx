@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1569a2b1-1efd-49dc-8de8-340c981064ea" name="Changes" comment="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/ListeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/TacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/MenuTache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application/MenuTache.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Liste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller/ListeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/ListeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/AjouterTache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterTache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/ModificationListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/ModificationListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/SupprimerListe.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application/Accueil_1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/Accueil_1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application/ModificationListe.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/ModificationListe.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application/SupprimerListe.fxml" beforeDir="false" />
     </list>
     <list id="5dcdd313-0fa0-489b-8d5b-94782912018d" name="Changes by admin" comment="" />
     <list id="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" name="Changes by ralip" comment="" />
@@ -24,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -53,11 +61,14 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kallee-digumber_sh\IdeaProjects\ktm-ready-to-do-list-fx\src\main\resources\application" />
       <recent name="C:\Users\shrad\IdeaProjects\CrudUser\src\main\resources\application" />
       <recent name="C:\Users\ralip\Desktop\todolistfx\src\main\resources\application" />
     </key>
@@ -157,17 +168,5 @@
     <MESSAGE value="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list." />
     <MESSAGE value="Progression Main et affichage des listes sur scenebuilder" />
     <option name="LAST_COMMIT_MESSAGE" value="Progression Main et affichage des listes sur scenebuilder" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/graphicController/AjouterTache.java</url>
-          <line>9</line>
-          <properties field="description" class="graphicController.AjouterTache" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

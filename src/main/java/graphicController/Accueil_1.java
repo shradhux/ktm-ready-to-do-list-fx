@@ -3,6 +3,7 @@ package graphicController;
 import Classes.Liste;
 import Classes.Utilisateur;
 import application.Main;
+import controller.Controller.ListeController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -19,14 +20,19 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import modele.bdd.Bdd;
 
 public class Accueil_1 implements Initializable{
 
-    private final Utilisateur user;
+    private Utilisateur user;
+
+    private static int idListeSelect;
 
     public  Accueil_1(Utilisateur user) throws SQLException {
         this.user = user;
+    }
+    public  Accueil_1(){
     }
 
 
@@ -38,34 +44,61 @@ public class Accueil_1 implements Initializable{
         @FXML
         void Afficher(ActionEvent event) throws SQLException {
 
-            PreparedStatement extraireListes = new Bdd().getBdd().prepareStatement("SELECT * FROM liste");
-            ResultSet recupListes = extraireListes.executeQuery();
-            while (recupListes.next()){
-               data.add(new Liste(recupListes.getInt(1), recupListes.getString(2),recupListes.getString(3)));
-
-            }
-            extraireListes.close();
-
-            id_liste.setCellValueFactory(new PropertyValueFactory<Liste,  Integer>("id_liste"));
-            nom.setCellValueFactory(new PropertyValueFactory<Liste,  String>("nom"));
-            description.setCellValueFactory(new PropertyValueFactory<Liste, String>("description"));
-            table.setItems(data);
-
-
-
-
-
-
-
         }
 
 
+    public static int getIdListeSelect() {
+        return idListeSelect;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        table.refresh();
+        PreparedStatement extraireListes = null;
+        try {
+            extraireListes = new Bdd().getBdd().prepareStatement("SELECT * FROM liste");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        ResultSet recupListes = null;
+        try {
+            recupListes = extraireListes.executeQuery();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        while (true){
+            try {
+                if (!recupListes.next()) break;
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                data.add(new Liste(recupListes.getInt(1), recupListes.getString(2),recupListes.getString(3)));
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+        try {
+            extraireListes.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        id_liste.setCellValueFactory(new PropertyValueFactory<Liste,  Integer>("id_liste"));
+        nom.setCellValueFactory(new PropertyValueFactory<Liste,  String>("nom"));
+        description.setCellValueFactory(new PropertyValueFactory<Liste, String>("description"));
+        table.refresh();
+        table.setItems(data);
+        table.refresh();
+
 
     }
+    @FXML
+    void mouseClicked(MouseEvent event) {
+        idListeSelect = table.getSelectionModel().getSelectedItem().getId_liste();
 
+    }
    @FXML private TableView<Liste> table;
     @FXML private TableColumn<Liste, Integer> id_liste;
     @FXML private TableColumn<Liste, String> nom;
@@ -102,14 +135,15 @@ public class Accueil_1 implements Initializable{
     }
 
     @FXML
-    void SupprimerListe(ActionEvent event) {
-        Main.change("SupprimerListe");
+    void SupprimerListe(ActionEvent event) throws SQLException {
+        ListeController listeController = new ListeController();
+        listeController.supprimerListe(getIdListeSelect());
 
     }
 
     @FXML
     void SupprimerTache(ActionEvent event) {
-        Main.change("SupprimerTache");
+
 
     }
 

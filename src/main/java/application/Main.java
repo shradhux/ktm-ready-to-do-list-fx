@@ -37,7 +37,6 @@ public class Main extends Application {
         stage.show();
     }
 
-
     public static void change(String fxml, Object controller, String title) {
         stage.close();
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml + ".fxml"));

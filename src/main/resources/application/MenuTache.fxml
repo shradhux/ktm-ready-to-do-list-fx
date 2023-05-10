@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="504.0" layoutY="152.0" mnemonicParsing="false" onAction="#Selectionner" text="Selectionner" />
+      <TableView fx:id="table" layoutX="19.0" layoutY="100.0" onMouseClicked="#mouseClicked" prefHeight="200.0" prefWidth="475.0">
+        <columns>
+          <TableColumn fx:id="id_tache" prefWidth="35.0" text="id" />
+          <TableColumn fx:id="nom" prefWidth="115.0" text="nom" />
+            <TableColumn fx:id="description" prefWidth="176.0" text="description" />
+            <TableColumn fx:id="est_realise" prefWidth="39.33331298828125" text="fait ?" />
+            <TableColumn fx:id="ref_type" prefWidth="53.33331298828125" text="ref_type" />
+            <TableColumn fx:id="ref_liste" prefWidth="55.99993896484375" text="ref_liste" />
+        </columns>
+      </TableView>
+      <Button layoutX="501.0" layoutY="187.0" mnemonicParsing="false" onAction="#AjouterTache" text="Ajouter tache" />
+      <Button layoutX="498.0" layoutY="223.0" mnemonicParsing="false" onAction="#ModifierTache" text="Modifier tache" />
+      <Button layoutX="494.0" layoutY="260.0" mnemonicParsing="false" onAction="#SupprimerTache" text="supprimer tache" />
+      <Button layoutX="28.0" layoutY="349.0" mnemonicParsing="false" onAction="#Retour" text="Retour" />
+      <Text layoutX="226.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu de gestion des tâches" />
+   </children>
+</AnchorPane>
