@@ -23,54 +23,60 @@ public class MenuType implements Initializable {
     private TableColumn<Type, String> code_couleur;
 
     @FXML
-    private TableColumn<Type, Integer> idType;
+    private TableColumn<Type, Integer> id_type;
 
     @FXML
     private TableColumn<Type, String> libelle;
     @FXML
-    private TableView<Type> table;
+    private TableView<Type> table1;
 
 
         public void initialize (URL url, ResourceBundle resourceBundle){
-
-        PreparedStatement extraireType = null;
-        try {
-            extraireType = new Bdd().getBdd().prepareStatement("SELECT * FROM Type");
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        ResultSet recupType = null;
-        try {
-            recupType = extraireType.executeQuery();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        while (true) {
             try {
-                if (!recupType.next()) break;
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
+
+
+                PreparedStatement extraireType = null;
+                try {
+                    extraireType = new Bdd().getBdd().prepareStatement("SELECT * FROM Type");
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                ResultSet recupType = null;
+                try {
+                    recupType = extraireType.executeQuery();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                while (true) {
+                    try {
+                        if (!recupType.next()) break;
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+                    try {
+                        data1.add(new Type(recupType.getInt(1), recupType.getString(2), recupType.getString(3)));
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+
+                }
+                try {
+                    extraireType.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+
+                id_type.setCellValueFactory(new PropertyValueFactory<Type, Integer>("id_type"));
+                libelle.setCellValueFactory(new PropertyValueFactory<Type, String>("libelle"));
+                code_couleur.setCellValueFactory(new PropertyValueFactory<Type, String>("code_couleur"));
+                table1.setItems(data1);
+
             }
-            try {
-                data.add(new Type(recupType.getInt(1), recupType.getString(2), recupType.getString(3)));
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-
+        catch (Exception e){
+            System.out.println(e);
         }
-        try {
-            extraireType.close();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        idType.setCellValueFactory(new PropertyValueFactory<Type, Integer>("idType"));
-        libelle.setCellValueFactory(new PropertyValueFactory<Type, String>("libelle"));
-        code_couleur.setCellValueFactory(new PropertyValueFactory<Type, String>("code_couleur"));
-        table.setItems(data);
-
-
     }
 
-    public ObservableList<Type> data= FXCollections.observableArrayList();
+
+    public ObservableList<Type> data1= FXCollections.observableArrayList();
 }

@@ -12,7 +12,7 @@ public class TypeController {
     public void ajouterType(Type uneType) throws SQLException {
         PreparedStatement req = new Bdd().getBdd().prepareStatement("insert into type (libelle,code_couleur) VALUES (?,?)");
         req.setString(1, uneType.getLibelle());
-        req.setString(2, uneType.getCodeCouleur());
+        req.setString(2, uneType.getCode_couleur());
         req.executeUpdate();
     }
 
@@ -21,8 +21,8 @@ public class TypeController {
 
         PreparedStatement req = new Bdd().getBdd().prepareStatement("UPDATE Type set libelle = ?, code_couleur = ? where id_type = ?");
         req.setString(1, uneType.getLibelle());
-        req.setString(2, uneType.getCodeCouleur());
-        req.setInt(3, uneType.getIdType());
+        req.setString(2, uneType.getCode_couleur());
+        req.setInt(3, uneType.getId_type());
         req.executeUpdate();
     }
 
