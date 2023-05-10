@@ -3,18 +3,23 @@ package Classes;
 public class Type {
 
     private String libelle;
-    private String code_couleur;
+    private String codeCouleur;
+    private int idType;
 
-    public String getCode_couleur() {
-        return code_couleur;
+    public String getCodeCouleur() {
+        return codeCouleur;
+    }
+
+    public int getIdType(){
+        return getIdType();
     }
 
     public String getLibelle() {
         return libelle;
     }
 
-    public void setCode_couleur(String code_couleur) {
-        this.code_couleur = code_couleur;
+    public void setCodeCouleur(String codeCouleur) {
+        this.codeCouleur = codeCouleur;
     }
 
 
@@ -23,9 +28,9 @@ public class Type {
     }
 
 
-    public Type(String libelle, String code_couleur) {
+    public Type(String libelle, String codeCouleur) {
         this.libelle = libelle;
-        this.code_couleur = code_couleur;
+        this.codeCouleur = codeCouleur;
     }
 }
 
