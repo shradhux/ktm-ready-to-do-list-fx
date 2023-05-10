@@ -7,11 +7,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 
 public class MenuTache {
+
+
+    @FXML
+    private Button btn_gerer_type;
+
 
     @FXML
     private TableColumn<?, ?> description;
@@ -46,7 +52,7 @@ public class MenuTache {
 
     @FXML
     void Retour(ActionEvent event) {
-
+    Main.change("Accueil_1");
     }
 
     @FXML
@@ -64,11 +70,16 @@ public class MenuTache {
 
     }
 
+    @FXML
+    void action_btn_gerer_type(ActionEvent event) {
+        Main.change("MenuType");
+    }
+/*
     @FXML private TableView<Tache> table;
     @FXML private TableColumn<Tache, Integer> id_liste;
     @FXML private TableColumn<Tache, String> nom;
     @FXML private TableColumn<Tache, String> description;
 
     public ObservableList<Tache> dataTache= FXCollections.observableArrayList();
-
+*/
 }

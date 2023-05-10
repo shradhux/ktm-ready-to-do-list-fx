@@ -32,6 +32,12 @@ public class Type {
         this.libelle = libelle;
         this.codeCouleur = codeCouleur;
     }
+
+    public Type(int idType, String libelle, String codeCouleur) {
+        this.idType = idType;
+        this.libelle = libelle;
+        this.codeCouleur = codeCouleur;
+    }
 }
 
 

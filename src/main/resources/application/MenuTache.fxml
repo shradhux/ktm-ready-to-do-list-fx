@@ -24,5 +24,6 @@
       <Button layoutX="494.0" layoutY="260.0" mnemonicParsing="false" onAction="#SupprimerTache" text="supprimer tache" />
       <Button layoutX="28.0" layoutY="349.0" mnemonicParsing="false" onAction="#Retour" text="Retour" />
       <Text layoutX="226.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu de gestion des tâches" />
+      <Button fx:id="btn_gerer_type" layoutX="96.0" layoutY="349.0" mnemonicParsing="false" onAction="#action_btn_gerer_type" text="Gérer les types" />
    </children>
 </AnchorPane>

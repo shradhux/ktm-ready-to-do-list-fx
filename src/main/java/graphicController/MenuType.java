@@ -1,6 +1,7 @@
 package graphicController;
 
 import Classes.Liste;
+import Classes.Type;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -18,14 +19,14 @@ import java.util.ResourceBundle;
 public class MenuType {
 
     @FXML
-    private TableColumn<Liste, String> codeCouleur;
+    private TableColumn<Type, String> code_couleur;
 
     @FXML
-    private TableColumn<Liste, Integer> idType;
+    private TableColumn<Type, Integer> idType;
 
     @FXML
-    private TableColumn<Liste, String> libelle;
-    @FXML private TableView<Liste> table;
+    private TableColumn<Type, String> libelle;
+    @FXML private TableView<Type> table;
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
         table.refresh();
@@ -48,7 +49,7 @@ public class MenuType {
                 throw new RuntimeException(e);
             }
             try {
-                data.add(new Liste(recupType.getInt(1), recupType.getString(2),recupType.getString(3)));
+                data.add(new Type(recupType.getInt(1), recupType.getString(2),recupType.getString(3)));
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -60,14 +61,14 @@ public class MenuType {
             throw new RuntimeException(e);
         }
 
-        idType.setCellValueFactory(new PropertyValueFactory<Liste,  Integer>("idType"));
-        libelle.setCellValueFactory(new PropertyValueFactory<Liste,  String>("libelle"));
-        codeCouleur.setCellValueFactory(new PropertyValueFactory<Liste,  String>("code_couleur"));
+        idType.setCellValueFactory(new PropertyValueFactory<Type,  Integer>("idType"));
+        libelle.setCellValueFactory(new PropertyValueFactory<Type,  String>("libelle"));
+        code_couleur.setCellValueFactory(new PropertyValueFactory<Type,  String>("code_couleur"));
         table.refresh();
         table.setItems(data);
         table.refresh();
 
 
     }
-    public ObservableList<Liste> data= FXCollections.observableArrayList();
+    public ObservableList<Type> data= FXCollections.observableArrayList();
 }
