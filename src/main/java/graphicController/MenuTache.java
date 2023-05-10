@@ -1,6 +1,10 @@
 package graphicController;
 
+import Classes.Liste;
+import Classes.Tache;
 import application.Main;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
@@ -59,5 +63,12 @@ public class MenuTache {
     void mouseClicked(MouseEvent event) {
 
     }
+
+    @FXML private TableView<Tache> table;
+    @FXML private TableColumn<Tache, Integer> id_liste;
+    @FXML private TableColumn<Tache, String> nom;
+    @FXML private TableColumn<Tache, String> description;
+
+    public ObservableList<Tache> dataTache= FXCollections.observableArrayList();
 
 }

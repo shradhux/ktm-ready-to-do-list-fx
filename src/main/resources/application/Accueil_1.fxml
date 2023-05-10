@@ -19,6 +19,6 @@
       <Button layoutX="426.0" layoutY="225.0" mnemonicParsing="false" onAction="#ModifierListe" text="modifier liste" />
       <Button layoutX="429.0" layoutY="183.0" mnemonicParsing="false" onAction="#SupprimerListe" text="Supprimer Liste" />
       <Button layoutX="499.0" layoutY="14.0" mnemonicParsing="false" onAction="#MonProfil" text="Mon Profil" />
-      <Button fx:id="Afficher1" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#deconnexion" text="Deconnexion" />
+      <Button fx:id="deconnexion" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#deconnexion" text="Deconnexion" />
    </children>
 </AnchorPane>
