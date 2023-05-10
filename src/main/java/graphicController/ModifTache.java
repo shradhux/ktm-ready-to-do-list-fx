@@ -1,5 +1,6 @@
 package graphicController;
 
+import Classes.Tache;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -7,6 +8,8 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 
 public class ModifTache {
+
+
 
     @FXML
     private TextField description_tache_new;
@@ -27,6 +30,8 @@ public class ModifTache {
 
     @FXML
     void valider_new_tache(ActionEvent event) {
+
+        Tache uneTache = new Tache(nom_tache_new.getText(),nom_tache_new.getText(), est_realise.isSelected());
 
     }
 

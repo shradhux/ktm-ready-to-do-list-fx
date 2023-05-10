@@ -67,7 +67,7 @@ public class Liste {
     }
 
     public int afficherIdTache(int i){
-        return this.lesTaches.get(i).getId_tache();
+        return this.lesTaches.get(i).getIdTache();
     }
 
     public String afficherDesfriptionTache(int i){
@@ -83,7 +83,7 @@ public class Liste {
     }
 
     public int afficherRefType(int i){
-        return lesTaches.get(i).getRef_type();
+        return lesTaches.get(i).getRefType();
     }
 
     public void setNom(String nom) {

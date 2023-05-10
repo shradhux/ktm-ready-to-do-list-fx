@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1569a2b1-1efd-49dc-8de8-340c981064ea" name="Changes" comment="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/TacheController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphicController/MenuTache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application/MenuTache.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller/ListeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/ListeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/Accueil_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/Accueil_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterListe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/AjouterTache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/AjouterTache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/ModificationListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/ModificationListe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/SupprimerListe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application/Accueil_1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/Accueil_1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application/ModificationListe.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application/ModificationListe.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application/SupprimerListe.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Liste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Tache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Tache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller/TacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller/TacheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicController/ModifTache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicController/ModifTache.java" afterDir="false" />
     </list>
     <list id="5dcdd313-0fa0-489b-8d5b-94782912018d" name="Changes by admin" comment="" />
     <list id="0dabcb6b-3264-49b4-9398-bf3c61cd8ffd" name="Changes by ralip" comment="" />
@@ -43,6 +33,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2OBaursKyrgABscrizaczNNUIwS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,21 +49,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shrad/IdeaProjects/CrudUser",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.JavaFX",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shrad/IdeaProjects/CrudUser&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kallee-digumber_sh\IdeaProjects\ktm-ready-to-do-list-fx\src\main\resources\application" />
@@ -111,6 +109,7 @@
       <workItem from="1683447981861" duration="9165000" />
       <workItem from="1683536870942" duration="15230000" />
       <workItem from="1683718200230" duration="1607000" />
+      <workItem from="1683735542634" duration="2008000" />
     </task>
     <task id="LOCAL-00001" summary="initialisation du projet : rassemblement du projet todolist console et crudfx.">
       <created>1683220223119</created>
