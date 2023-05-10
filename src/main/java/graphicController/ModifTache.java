@@ -31,7 +31,8 @@ public class ModifTache {
     @FXML
     void valider_new_tache(ActionEvent event) {
 
-        Tache uneTache = new Tache(nom_tache_new.getText(),nom_tache_new.getText(), est_realise.isSelected());
+        Tache uneTache = new Tache(nom_tache_new.getText(),nom_tache_new.getText(), est_realise.isSelected(), Accueil_1.getIdListeSelect(), 1); // ID TYPE A REMPLIR
+
 
     }
 

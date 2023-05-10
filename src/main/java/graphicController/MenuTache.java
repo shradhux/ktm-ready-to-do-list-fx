@@ -37,7 +37,7 @@ public class MenuTache {
 
     @FXML
     void ModifierTache(ActionEvent event) {
-
+        Main.change("ModifierTache");
     }
 
     @FXML

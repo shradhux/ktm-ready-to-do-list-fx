@@ -26,7 +26,6 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <CheckBox layoutX="39.0" layoutY="284.0" mnemonicParsing="false" onAction="#est_realise" text="Fait " />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <TextField fx:id="nom" layoutX="29.0" layoutY="135.0" />
       <TextField fx:id="description" layoutX="29.0" layoutY="200.0" />
