@@ -5,6 +5,7 @@ import Classes.Type;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -16,7 +17,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-public class MenuType {
+public class MenuType implements Initializable {
 
     @FXML
     private TableColumn<Type, String> code_couleur;
@@ -26,30 +27,32 @@ public class MenuType {
 
     @FXML
     private TableColumn<Type, String> libelle;
-    @FXML private TableView<Type> table;
+    @FXML
+    private TableView<Type> table;
 
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        table.refresh();
+
+        public void initialize (URL url, ResourceBundle resourceBundle){
+
         PreparedStatement extraireType = null;
         try {
             extraireType = new Bdd().getBdd().prepareStatement("SELECT * FROM Type");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        ResultSet recupType= null;
+        ResultSet recupType = null;
         try {
             recupType = extraireType.executeQuery();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        while (true){
+        while (true) {
             try {
                 if (!recupType.next()) break;
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
             try {
-                data.add(new Type(recupType.getInt(1), recupType.getString(2),recupType.getString(3)));
+                data.add(new Type(recupType.getInt(1), recupType.getString(2), recupType.getString(3)));
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -61,14 +64,13 @@ public class MenuType {
             throw new RuntimeException(e);
         }
 
-        idType.setCellValueFactory(new PropertyValueFactory<Type,  Integer>("idType"));
-        libelle.setCellValueFactory(new PropertyValueFactory<Type,  String>("libelle"));
-        code_couleur.setCellValueFactory(new PropertyValueFactory<Type,  String>("code_couleur"));
-        table.refresh();
+        idType.setCellValueFactory(new PropertyValueFactory<Type, Integer>("idType"));
+        libelle.setCellValueFactory(new PropertyValueFactory<Type, String>("libelle"));
+        code_couleur.setCellValueFactory(new PropertyValueFactory<Type, String>("code_couleur"));
         table.setItems(data);
-        table.refresh();
 
 
     }
+
     public ObservableList<Type> data= FXCollections.observableArrayList();
 }
