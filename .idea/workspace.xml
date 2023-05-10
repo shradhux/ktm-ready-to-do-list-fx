@@ -20,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -69,6 +69,9 @@
       <recent name="C:\Users\kallee-digumber_sh\IdeaProjects\ktm-ready-to-do-list-fx\src\main\resources\application" />
       <recent name="C:\Users\shrad\IdeaProjects\CrudUser\src\main\resources\application" />
       <recent name="C:\Users\ralip\Desktop\todolistfx\src\main\resources\application" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller.Controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683277238207</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="menu principal terminé et progression menu de gestion de tache">
+      <created>1683734691685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683734691685</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +176,7 @@
     <MESSAGE value="update correction du rassemblement du projet todolist console et crudfx / ." />
     <MESSAGE value="ajout fxml et class ModifTache et ModificationListe. Et creation controller de listee et tache. &#10;ktm ready to do list." />
     <MESSAGE value="Progression Main et affichage des listes sur scenebuilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progression Main et affichage des listes sur scenebuilder" />
+    <MESSAGE value="menu principal terminé et progression menu de gestion de tache" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu principal terminé et progression menu de gestion de tache" />
   </component>
 </project>
