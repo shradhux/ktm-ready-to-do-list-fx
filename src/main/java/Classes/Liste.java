@@ -29,7 +29,13 @@ public class Liste {
         return nom;
     }
 
+    public int getId_liste() {
+        return id_liste;
+    }
 
+    public void setId_liste(int id_liste) {
+        this.id_liste = id_liste;
+    }
 
     public String getDescription() {
         return description;

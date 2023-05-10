@@ -2,6 +2,7 @@ package graphicController;
 
 import Classes.Liste;
 import Classes.Utilisateur;
+import application.Main;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -73,36 +74,42 @@ public class Accueil_1 implements Initializable{
     public ObservableList<Liste> data= FXCollections.observableArrayList();
     @FXML
     void AjouterListe(ActionEvent event) {
-
+        Main.change("AjouterListe");
     }
 
     @FXML
     void AjouterTache(ActionEvent event) {
+        Main.change("AjouterTache");
 
     }
 
     @FXML
     void ModifierListe(ActionEvent event) {
+        Main.change("ModificationListe");
 
     }
 
     @FXML
     void ModifierTache(ActionEvent event) {
+        Main.change("ModifTache");
 
     }
 
     @FXML
     void MonProfil(ActionEvent event) {
 
+
     }
 
     @FXML
     void SupprimerListe(ActionEvent event) {
+        Main.change("SupprimerListe");
 
     }
 
     @FXML
     void SupprimerTache(ActionEvent event) {
+        Main.change("SupprimerTache");
 
     }
 

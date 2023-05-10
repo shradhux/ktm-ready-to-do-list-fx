@@ -8,9 +8,9 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button fx:id="Afficher" layoutX="31.0" layoutY="100.0" mnemonicParsing="false" onAction="#Afficher" text="Selectionner" />
-      <TableView fx:id="table" layoutX="173.0" layoutY="100.0" onSort="#table" prefHeight="200.0" prefWidth="254.0">
+      <TableView fx:id="table" layoutX="173.0" layoutY="100.0"  prefHeight="200.0" prefWidth="254.0">
         <columns>
-          <TableColumn fx:id="id" prefWidth="35.0" text="id" />
+          <TableColumn fx:id="id_liste" prefWidth="35.0" text="id" />
           <TableColumn fx:id="nom" prefWidth="115.0" text="nom" />
             <TableColumn fx:id="description" prefWidth="103.0" text="description" />
         </columns>
