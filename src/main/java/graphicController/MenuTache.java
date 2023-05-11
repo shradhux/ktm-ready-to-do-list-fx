@@ -3,6 +3,7 @@ package graphicController;
 import Classes.Tache;
 import Classes.Type;
 import application.Main;
+import controller.Controller.TacheController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -20,6 +21,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+
 
 public class MenuTache implements Initializable {
 
@@ -48,21 +50,10 @@ public class MenuTache implements Initializable {
 
     @FXML
     private TableView<Tache> table;
+    public ObservableList<Tache> data= FXCollections.observableArrayList();
 
-    @FXML
-    void AjouterTache(ActionEvent event) {
-        Main.change("AjouterTache");
-    }
 
-    @FXML
-    void ModifierTache(ActionEvent event) {
-        Main.change("ModifierTache");
-    }
 
-    @FXML
-    void Retour(ActionEvent event) {
-    Main.change("Accueil_1");
-    }
 
     public void initialize (URL url, ResourceBundle resourceBundle){
         try {
@@ -115,22 +106,27 @@ public class MenuTache implements Initializable {
         }
 
     }
-
-    public ObservableList<Tache> data= FXCollections.observableArrayList();
-
-    @FXML
-    void SupprimerTache(ActionEvent event) {
+    @FXML void AjouterTache(ActionEvent event) {
+        Main.change("AjouterTache");
+    }
+    @FXML void ModifierTache(ActionEvent event) {
+        Main.change("ModifierTache");
+    }
+    @FXML void Retour(ActionEvent event) {
+    Main.change("Accueil_1");
+    }
+    @FXML void SupprimerTache(ActionEvent event) {
+        TacheController.supprimerTache(this.table.getSelectionModel().getSelectedItem().getId_tache());
+        this.table.getSelectionModel().getSelectedItems().remove(this.table.getSelectionModel().getSelectedItem());
+        this.table.refresh();
+    }
+    @FXML void mouseClicked(MouseEvent event) {
 
     }
-
-    @FXML
-    void mouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void action_btn_gerer_type(ActionEvent event) {
+    @FXML void action_btn_gerer_type(ActionEvent event) {
         Main.change("MenuType");
     }
+    public static int getIdTacheSelect() {return getIdTacheSelect();}
+
 
 }
