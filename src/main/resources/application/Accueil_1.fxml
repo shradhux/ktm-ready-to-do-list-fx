@@ -16,9 +16,10 @@
         </columns>
       </TableView>
       <Button layoutX="429.0" layoutY="144.0" mnemonicParsing="false" onAction="#AjouterListe" text="Ajouter liste" />
-      <Button layoutX="426.0" layoutY="225.0" mnemonicParsing="false" onAction="#ModifierListe" text="modifier liste" />
+      <Button layoutX="436.0" layoutY="226.0" mnemonicParsing="false" onAction="#ModifierListe" text="modifier liste" />
       <Button layoutX="429.0" layoutY="183.0" mnemonicParsing="false" onAction="#SupprimerListe" text="Supprimer Liste" />
       <Button layoutX="499.0" layoutY="14.0" mnemonicParsing="false" onAction="#MonProfil" text="Mon Profil" />
       <Button fx:id="deconnexion" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#deconnexion" text="Deconnexion" />
+      <Button fx:id="Admin" layoutX="429.0" layoutY="98.0" mnemonicParsing="false" onAction="#MenuAdmin" text="Géer inscrits" textFill="RED" />
    </children>
 </AnchorPane>

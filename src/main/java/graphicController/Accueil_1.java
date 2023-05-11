@@ -41,6 +41,9 @@ public class Accueil_1 implements Initializable{
         private Button Afficher;
 
 
+    @FXML
+    private Button Admin;
+
 
         @FXML
         void Afficher(ActionEvent event) throws SQLException {
@@ -54,6 +57,13 @@ public class Accueil_1 implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+            if(user.getAdmin()){
+        Admin.setVisible(true);
+            }else{
+                Admin.setVisible(false);
+            }
+
         table.refresh();
         PreparedStatement extraireListes = null;
         try {
@@ -111,6 +121,11 @@ public class Accueil_1 implements Initializable{
     @FXML
     void AjouterListe(ActionEvent event) {
         Main.change("AjouterListe");
+    }
+
+    @FXML
+    void MenuAdmin(ActionEvent event) {
+        Main.change("MenuGestionInscrit",new MenuGestionInscrit(),"MenuGestionInscrit");
     }
 
     @FXML
