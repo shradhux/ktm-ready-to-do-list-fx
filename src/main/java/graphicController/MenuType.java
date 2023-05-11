@@ -2,8 +2,13 @@ package graphicController;
 
 import Classes.Liste;
 import Classes.Type;
+import application.Main;
+import controller.Controller.ListeController;
+import controller.Controller.TacheController;
+import controller.Controller.TypeController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
@@ -29,6 +34,7 @@ public class MenuType implements Initializable {
     private TableColumn<Type, String> libelle;
     @FXML
     private TableView<Type> table1;
+    private static int idTypeSelect;
 
 
         public void initialize (URL url, ResourceBundle resourceBundle){
@@ -79,4 +85,29 @@ public class MenuType implements Initializable {
 
 
     public ObservableList<Type> data1= FXCollections.observableArrayList();
+    @FXML
+    void AjouterType(ActionEvent event) {
+        Main.change("AjouterType");
+
+    }
+
+    @FXML
+    void ModifierType(ActionEvent event) {
+        Main.change("ModifType");
+    }
+
+    @FXML
+    void Retour(ActionEvent event) {
+        Main.change("MenuTache");
+
+    }
+
+    @FXML
+    void Supprimer(ActionEvent event) throws SQLException {
+        TypeController.supprimerType(this.table1.getSelectionModel().getSelectedItem().getId_type());
+        this.table1.getSelectionModel().getSelectedItems().remove(this.table1.getSelectionModel().getSelectedItem());
+        this.table1.refresh();
+
+
+    }
 }

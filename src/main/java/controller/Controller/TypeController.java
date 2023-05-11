@@ -26,7 +26,7 @@ public class TypeController {
         req.executeUpdate();
     }
 
-    public void supprimerType(int id_type) throws SQLException {
+    public static void supprimerType(int id_type) throws SQLException {
 
 
         PreparedStatement req = new Bdd().getBdd().prepareStatement("DELETE FROM Type where id_type = ?");
