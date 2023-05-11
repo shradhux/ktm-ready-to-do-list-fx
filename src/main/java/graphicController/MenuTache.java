@@ -63,7 +63,8 @@ public class MenuTache implements Initializable {
 
             PreparedStatement extraireTache = null;
             try {
-                extraireTache = new Bdd().getBdd().prepareStatement("SELECT * FROM Tache");
+                extraireTache = new Bdd().getBdd().prepareStatement("SELECT * FROM Tache WHERE ref_liste = ?");
+                extraireTache.setInt(1,Accueil_1.getIdListeSelect());
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }

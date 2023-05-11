@@ -57,7 +57,8 @@ public class Accueil_1 implements Initializable{
         table.refresh();
         PreparedStatement extraireListes = null;
         try {
-            extraireListes = new Bdd().getBdd().prepareStatement("SELECT * FROM liste");
+            extraireListes = new Bdd().getBdd().prepareStatement("SELECT * FROM liste WHERE id_liste IN(SELECT ref_liste FROM UtilisateurListe WHERE ref_utilisateur = ?)");
+            extraireListes.
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -131,7 +132,7 @@ public class Accueil_1 implements Initializable{
 
     @FXML
     void MonProfil(ActionEvent event) {
-
+    Main.change("ModifInscrit", new ModifInscrit(),"ModifInscrit");
 
     }
 
@@ -150,7 +151,7 @@ public class Accueil_1 implements Initializable{
 
     @FXML
     void deconnexion(ActionEvent event) {
-
+        Main.change("Connection");
     }
 
 

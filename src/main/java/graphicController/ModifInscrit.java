@@ -1,5 +1,6 @@
 package graphicController;
 import Classes.Utilisateur;
+import application.Main;
 import controller.Controller.UtilisateurController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -27,6 +28,7 @@ public class ModifInscrit {
         Utilisateur user = new Utilisateur(text_nv_nom.getText(), text_nv_prenom.getText());
         UtilisateurController controluser = new UtilisateurController();
         controluser.modifInscrit(user);
+        Main.change("Accueil_1");
     }
 
 
