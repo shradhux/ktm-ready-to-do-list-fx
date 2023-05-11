@@ -34,11 +34,19 @@ public class UtilisateurController {
     }
 
     public static Utilisateur getByEmail(String email) throws SQLException {
-        PreparedStatement req = new Bdd().getBdd().prepareStatement("select id_utilisateur, nom, prenom, mail, mdp, est_admin from utilisateur where mail = ?;");
+        PreparedStatement req = new Bdd().getBdd().prepareStatement("select id_utilisateur, nom, prenom, mail, mdp, est_admin from utilisateur where mail = ?");
         req.setString(1, email);
         ResultSet rep = req.executeQuery();
         rep.next();
         return new Utilisateur(rep.getInt(1), rep.getString(2), rep.getString(3), rep.getString(4), rep.getString(5), rep.getBoolean(6));
+
+    }
+
+    public static void modifInscrit (Utilisateur user) throws SQLException {
+        PreparedStatement req = new Bdd().getBdd().prepareStatement("UPDATE utilisateur SET nom = ?, prenom = ?");
+        req.setString(1,user.getNom());
+        req.setString(2,user.getPrenom());
+        req.executeUpdate();
 
     }
 

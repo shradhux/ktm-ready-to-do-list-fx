@@ -51,5 +51,13 @@ public class Utilisateur {
     public Utilisateur(String nom, String prenom, String email, String mdp){
         this(0,nom,prenom,email,mdp,null);
     }
-}
+
+
+    public Utilisateur(String nom, String prenom) {
+
+        this.nom = nom;
+        this.prenom = prenom;
+
+    }
+    }
 
