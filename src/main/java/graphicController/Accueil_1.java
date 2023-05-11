@@ -58,7 +58,7 @@ public class Accueil_1 implements Initializable{
         PreparedStatement extraireListes = null;
         try {
             extraireListes = new Bdd().getBdd().prepareStatement("SELECT * FROM liste WHERE id_liste IN(SELECT ref_liste FROM UtilisateurListe WHERE ref_utilisateur = ?)");
-            extraireListes.
+            extraireListes.setInt(1, Utilisateur.getId());
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

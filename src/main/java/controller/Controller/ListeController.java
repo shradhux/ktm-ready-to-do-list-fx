@@ -1,6 +1,7 @@
 package controller.Controller;
 
 import Classes.Liste;
+import Classes.Utilisateur;
 import modele.bdd.Bdd;
 
 import java.sql.PreparedStatement;
@@ -11,10 +12,30 @@ public class ListeController {
     public void ajouterListe(Liste uneListe) throws SQLException {
 
 
-        PreparedStatement req = new Bdd().getBdd().prepareStatement("insert into liste (nom,description) VALUES (?,?)");
+        PreparedStatement req = new Bdd().getBdd().prepareStatement("insert into liste (nom,description) VALUES (?,?)") ;
         req.setString(1, uneListe.getNom());
         req.setString(2, uneListe.getDescription());
-        req.executeUpdate();
+
+        try{
+
+
+        PreparedStatement req2 = new Bdd().getBdd().prepareStatement("SELECT id_liste FROM liste WHERE nom = ? AND description = ?") ;
+        req2.setString(1, uneListe.getNom());
+        req2.setString(2, uneListe.getDescription());
+        ResultSet rep = req2.executeQuery();
+        int nvIdListe = rep.getInt(1);
+
+
+        PreparedStatement req1 = new Bdd().getBdd().prepareStatement("insert into UtilisateurListe (ref_utilisateur,ref_liste) VALUES (?,?)");
+        req1.setInt(1, Utilisateur.getId());
+        req1.setInt(2, nvIdListe);
+        req1.executeUpdate();
+
+
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
     }
 
     public void modifierListe(Liste uneListe) throws SQLException {
