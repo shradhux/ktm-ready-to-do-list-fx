@@ -5,17 +5,17 @@ import java.util.ArrayList;
 public class Tache {
 
 
-    private int idTache;
+    private int id_tache;
     private String nom;
     private String description;
     private boolean est_realise;
-    private int refListe;
+    private int ref_liste;
 
-    private int refType;
+    private int ref_type;
 
 
-    public int getIdTache() {
-        return idTache;
+    public int getId_tache() {
+        return id_tache;
     }
 
     public String getDescription() {
@@ -30,27 +30,34 @@ public class Tache {
         return nom;
     }
 
-    public int getRefListe() {
-        return refListe;
+    public int getRef_liste() {
+        return ref_liste;
     }
 
-
-    public int getRefType(){
-        return refType;
+    public int getRef_type() {
+        return ref_type;
     }
 
-    public boolean getRealise(){
+    public boolean getEst_realise(){
         return this.est_realise;
     }
 
     public Tache(String description, String nom, boolean est_realise, int ref_liste, int ref_type){
-        this.refListe = ref_liste;
+        this.ref_liste = ref_liste;
         this.est_realise = est_realise;
         this.nom = nom;
         this.description = description;
-        this.refType = ref_type;
+        this.ref_type = ref_type;
     }
 
+    public Tache(int id_tache ,String description, String nom, boolean est_realise, int ref_liste, int ref_type){
+        this.ref_liste = ref_liste;
+        this.est_realise = est_realise;
+        this.nom = nom;
+        this.description = description;
+        this.ref_type = ref_type;
+        this.id_tache = id_tache;
+    }
     public void nvNom(String nom) {
         this.nom = nom;
     }

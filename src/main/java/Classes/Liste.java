@@ -67,7 +67,7 @@ public class Liste {
     }
 
     public int afficherIdTache(int i){
-        return this.lesTaches.get(i).getIdTache();
+        return this.lesTaches.get(i).getId_tache();
     }
 
     public String afficherDesfriptionTache(int i){
@@ -75,7 +75,7 @@ public class Liste {
     }
 
     public String afficherEtatTache(int i){
-        if(this.lesTaches.get(i).getRealise()){
+        if(this.lesTaches.get(i).getEst_realise()){
             return "effectué";
         }else{
             return "non effectué";
@@ -83,7 +83,7 @@ public class Liste {
     }
 
     public int afficherRefType(int i){
-        return lesTaches.get(i).getRefType();
+        return lesTaches.get(i).getRef_type();
     }
 
     public void setNom(String nom) {
