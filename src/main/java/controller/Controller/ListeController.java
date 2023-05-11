@@ -9,14 +9,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ListeController {
+
+    private int nvIdListe;
     public void ajouterListe(Liste uneListe) throws SQLException {
-    int nvIdListe = 0;
+
 
         PreparedStatement req = new Bdd().getBdd().prepareStatement("insert into liste (nom,description) VALUES (?,?)") ;
         req.setString(1, uneListe.getNom());
         req.setString(2, uneListe.getDescription());
+        req.executeUpdate();
 
-        try{
 
 
         PreparedStatement req2 = new Bdd().getBdd().prepareStatement("SELECT id_liste FROM liste WHERE nom = ? AND description = ?") ;
@@ -33,9 +35,7 @@ public class ListeController {
         req1.executeUpdate();
 
 
-        }catch (Exception e){
-            System.out.println(e);
-        }
+
 
     }
 
