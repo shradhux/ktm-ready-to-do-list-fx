@@ -4,9 +4,12 @@ import Classes.Liste;
 import Classes.Type;
 import application.Main;
 import controller.Controller.ListeController;
+import controller.Controller.TypeController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+
+import java.sql.SQLException;
 
 public class ModifType {
 
@@ -17,11 +20,11 @@ public class ModifType {
     private TextField libelle;
 
     @FXML
-    void valider(ActionEvent event) {
-       // Type unType = new Type(Accueil_1.getIdListeSelect(),modif_nom.getText(),modif_description.getText());
-       // ListeController nvListe = new ListeController();
-       // nvListe.modifierListe(uneListe);
-        //Main.change("Accueil_1",new Accueil_1(),"az");
+    void valider(ActionEvent event) throws SQLException {
+       Type unType = new Type(MenuType.getIdTypeSelect(),code_couleur.getText(),libelle.getText());
+       TypeController nvType = new TypeController();
+       nvType.modifierType(unType);
+        Main.change("Accueil_1",new Accueil_1(),"az");
 
 
     }

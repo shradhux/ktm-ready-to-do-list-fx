@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import modele.bdd.Bdd;
 
 import java.net.URL;
@@ -109,5 +110,12 @@ public class MenuType implements Initializable {
         this.table1.refresh();
 
 
+    }
+    @FXML void mouseClicked(MouseEvent event) {
+        idTypeSelect = table1.getSelectionModel().getSelectedItem().getId_type();
+
+    }
+    public static int getIdTypeSelect() {
+        return idTypeSelect;
     }
 }
