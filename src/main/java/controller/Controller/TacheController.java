@@ -20,14 +20,20 @@ public class TacheController {
         req.setInt(5, uneTache.getRef_type());
         req.executeUpdate();
     }
-    public void modifierTache(Tache uneTache) throws SQLException {
+    public void modifierTache(Tache uneTache)  {
 
 
-        PreparedStatement req = new Bdd().getBdd().prepareStatement("UPDATE Tache set nom = ?, description = ? where id_tache = ?");
-        req.setString(1, uneTache.getNom());
-        req.setString(2, uneTache.getDescription());
-        req.setInt(3, uneTache.getId_tache());
-        req.executeUpdate();
+
+        try {
+            PreparedStatement req = new Bdd().getBdd().prepareStatement("UPDATE Tache set nom = ?, description = ? where id_tache = ?");
+            req.setString(1, uneTache.getNom());
+            req.setString(2, uneTache.getDescription());
+            req.setInt(3, uneTache.getId_tache());
+            req.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     public static void supprimerTache(int id_tache) {

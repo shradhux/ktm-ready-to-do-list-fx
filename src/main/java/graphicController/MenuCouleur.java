@@ -25,6 +25,7 @@ public class MenuCouleur {
     String JAUNE(ActionEvent event) {
         code_couleur = "JAUNE";
         Main.change("MenuType");
+        return null;
     }
 
     @FXML

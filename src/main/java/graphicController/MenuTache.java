@@ -52,6 +52,8 @@ public class MenuTache implements Initializable {
     private TableView<Tache> table;
     public ObservableList<Tache> data= FXCollections.observableArrayList();
 
+    private static int idTacheSelect;
+
 
 
 
@@ -110,7 +112,7 @@ public class MenuTache implements Initializable {
         Main.change("AjouterTache");
     }
     @FXML void ModifierTache(ActionEvent event) {
-        Main.change("ModifierTache");
+        Main.change("ModifTache");
     }
     @FXML void Retour(ActionEvent event) {
     Main.change("Accueil_1");
@@ -121,12 +123,16 @@ public class MenuTache implements Initializable {
         this.table.refresh();
     }
     @FXML void mouseClicked(MouseEvent event) {
+        idTacheSelect = table.getSelectionModel().getSelectedItem().getId_tache();
 
+    }
+    public static int getIdTacheSelect() {
+        return idTacheSelect;
     }
     @FXML void action_btn_gerer_type(ActionEvent event) {
         Main.change("MenuType");
     }
-    public static int getIdTacheSelect() {return getIdTacheSelect();}
+
 
 
 }

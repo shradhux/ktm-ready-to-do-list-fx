@@ -9,9 +9,9 @@ public class Tache {
     private String nom;
     private String description;
     private boolean est_realise;
-    private int ref_liste;
+    private static int ref_liste;
 
-    private int ref_type;
+    private static int ref_type;
 
 
     public int getId_tache() {
@@ -30,11 +30,11 @@ public class Tache {
         return nom;
     }
 
-    public int getRef_liste() {
+    public static int getRef_liste() {
         return ref_liste;
     }
 
-    public int getRef_type() {
+    public static int getRef_type() {
         return ref_type;
     }
 
