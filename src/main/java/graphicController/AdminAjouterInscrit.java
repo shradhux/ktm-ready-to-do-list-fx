@@ -1,5 +1,8 @@
 package graphicController;
 
+import Classes.Utilisateur;
+import application.Main;
+import controller.Controller.UtilisateurController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
@@ -24,6 +27,11 @@ public class AdminAjouterInscrit {
 
     @FXML
     void Ajouter(ActionEvent event) {
+        Utilisateur user = new Utilisateur(txt_nom.getText(), txt_prenom.getText(), txt_mail.getText(), txt_mdp.getText());
+
+        UtilisateurController.inscription(user);
+
+        Main.change("Accueil_1");
 
     }
 
