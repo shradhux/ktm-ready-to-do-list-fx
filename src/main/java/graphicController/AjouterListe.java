@@ -23,7 +23,7 @@ public class AjouterListe {
         ListeController nvListe = new ListeController();
         Liste uneListe = new Liste(nom.getText(), description.getText());
         nvListe.ajouterListe(uneListe);
-        Main.change("Accueil_1",new Accueil_1(),"Accueil_1");
+        Main.change("Accueil_1",new Accueil_1(),"accueil");
 
     }
 

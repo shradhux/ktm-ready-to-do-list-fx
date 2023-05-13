@@ -56,8 +56,8 @@ public class UtilisateurController {
             req = new Bdd().getBdd().prepareStatement("INSERT INTO utilisateur (nom, prenom, mail, mdp, est_admin) VALUES (?,?,?,?,0) ");
             req.setString(1, user.getNom());
             req.setString(2, user.getPrenom());
-            req.setString(3, user.getMdp());
-            req.setString(4, user.getEmail());
+            req.setString(3, user.getEmail());
+            req.setString(4, user.getMdp());
             req.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);

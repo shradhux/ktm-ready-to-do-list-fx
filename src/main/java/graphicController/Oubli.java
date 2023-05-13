@@ -38,7 +38,7 @@ public class Oubli {
     @FXML
     void verrifi_email(ActionEvent event) {
         try {
-            PreparedStatement req = new Bdd().getBdd().prepareStatement("select count(id_user) from user where mail = ? ;");
+            PreparedStatement req = new Bdd().getBdd().prepareStatement("select count(id_utilisateur) from utilisateur where mail = ? ;");
             req.setString(1, input.getText());
             ResultSet res = req.executeQuery();
             res.next();

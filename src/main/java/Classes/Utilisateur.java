@@ -25,27 +25,27 @@ public class Utilisateur {
         return mdp;
     }
 
-    public Boolean getAdmin() {
-        return admin;
+    public Boolean getEst_admin() {
+        return est_admin;
     }
 
     private String prenom;
     private String email;
     private String mdp;
-    private Boolean admin;
+    private Boolean est_admin;
 
 
     public void setMdp(String mdp) {
         this.mdp = mdp;
     }
 
-    public Utilisateur(int id, String nom, String prenom, String email, String mdp, Boolean admin) {
+    public Utilisateur(int id, String nom, String prenom, String email, String mdp, Boolean est_admin) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.mdp = mdp;
-        this.admin = admin;
+        this.est_admin = est_admin;
 
     }
     public Utilisateur(String nom, String prenom, String email, String mdp){

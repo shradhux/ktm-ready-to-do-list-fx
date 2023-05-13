@@ -58,7 +58,7 @@ public class Accueil_1 implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-            if(user.getAdmin()){
+            if(user.getEst_admin()){
         Admin.setVisible(true);
             }else{
                 Admin.setVisible(false);
